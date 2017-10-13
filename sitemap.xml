@@ -7,6 +7,12 @@
   
   
   
+  <url>
+    <loc>http://localhost:4000/a2oj_results</loc>
+  </url>
+  
+  
+  
   
   
   <url>
@@ -17,6 +23,12 @@
   
   <url>
     <loc>http://localhost:4000/js/mydoc_scroll.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/mydoc_shard_accountjid.html</loc>
   </url>
   
   

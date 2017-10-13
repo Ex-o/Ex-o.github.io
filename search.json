@@ -3,6 +3,17 @@
 
 
 
+{
+"title": "Round 1 Results",
+"tags": "",
+"keywords": "results",
+"url": "a2oj_results",
+"summary": "Enjoy stalking."
+}
+,
+
+
+
 
 
 {
@@ -10,7 +21,7 @@
 "tags": "",
 "keywords": "homepage",
 "url": "index.html",
-"summary": "This is a detailed documentation for the different aspects of this game. It will include everything known and eligible for publicity."
+"summary": "This is a documentation for the VSRO_188 database."
 }
 ,
 
@@ -28,11 +39,22 @@
 
 
 {
-"title": "Shard",
+"title": "Shard._AccountJID",
+"tags": "",
+"keywords": "_accountjid",
+"url": "mydoc_shard_accountjid.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Shard Database",
 "tags": "",
 "keywords": "shard",
 "url": "mydoc_shard_main",
-"summary": "This is a detailed documentation for the different aspects of this game. It will include everything known and eligible for publicity."
+"summary": "Silkroad uses a shard database architecture that we're going to explain withing this section."
 }
 ,
 

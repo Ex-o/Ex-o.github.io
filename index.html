@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="This is a detailed documentation for the different aspects of this game. It will include everything known and eligible for publicity.">
+<meta name="description" content="This is a documentation for the VSRO_188 database.">
 <meta name="keywords" content=" homepage">
 <title>Fayox - The Documentation | Fayox Silkroad Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -87,6 +87,25 @@
         });
     </script>
     
+    <!-- Include the standard DataTables bits -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
+    <!-- First, this walks through the tables that occur between ...-begin
+         and ...-end and add the "datatable" class to them.
+         Then it invokes DataTable's standard initializer
+         Credit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
+      -->
+    <script>
+      $(document).ready(function(){
+          $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
+          $('table.display').DataTable( {
+              paging: true,
+              stateSave: true,
+              searching: true
+          });
+       });
+    </script>
+    
 
 </head>
 <body>
@@ -145,7 +164,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject=Jekyll documentation theme feedback&body=I have some feedback about the Fayox - The Documentation page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:?subject=Fayox feedback&body=I have some feedback about the Fayox - The Documentation page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -270,7 +289,7 @@
 <div class="post-content">
 
    
-    <div class="summary">This is a detailed documentation for the different aspects of this game. It will include everything known and eligible for publicity.</div>
+    <div class="summary">This is a documentation for the VSRO_188 database.</div>
    
 
     
@@ -301,9 +320,38 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="release-date">Release Date</h2>
+  <h2 id="overview">Overview</h2>
+<p>This documentation provides information about the databases, tables, and the over all schema. This is not a tutorial nor a learning experience. If anything, this is could be used as a reference. Since this database uses SQL, having basic knowledge about the database and the language is prefered.</p>
 
-<p>This documentation is scheduled for June’17. A weekly update will be published until the documentation is complete.</p>
+<p>The doocumentation is still a work-in-progress so, if you find any errors please report them.</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+<p>#Silkroad Online is owned by JOYMAX Trademark of Joymax Co., Ltd. The databases, files, or anything provided by this website is owned by JOYMAX unless stated otherwise. If you own any of the content and would like it removed, please contant me.</p>
+
+<div class="datatable-begin"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>A2OJ UserName</th>
+      <th>Codeforces UserName</th>
+      <th>Rating</th>
+      <th>Max Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>AymanWizard</td>
+      <td>AymanWizard</td>
+      <td>9999</td>
+      <td>999</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="datatable-end"></div>
 
 
     <div class="tags">
@@ -319,7 +367,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Fayox. All rights reserved. <br />
- Site last updated: Apr 29, 2017 <br />
+ Site last updated: Oct 13, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
