@@ -1,43 +1,24 @@
+---
+layout: none
+search: exclude
+---
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+  {% for post in site.posts %}
+  {% unless post.search == "exclude" %}
+  <url>
+    <loc>{{site.url}}{{post.url}}</loc>
+  </url>
+  {% endunless %}
+  {% endfor %}
 
 
-  
-  
-  
-  
-  
-  
+  {% for page in site.pages %}
+  {% unless page.search == "exclude" %}
   <url>
-    <loc>http://localhost:4000/index.html</loc>
+    <loc>{{site.url}}{{ page.url}}</loc>
   </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/js/mydoc_scroll.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/mydoc_shard_main</loc>
-  </url>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  {% endunless %}
+  {% endfor %}
 </urlset>

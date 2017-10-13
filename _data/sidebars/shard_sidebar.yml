@@ -1,0 +1,98 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product:
+  version:
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Reference Tables
+    output: web, pdf
+    folderitems:
+    - title: 
+    - output: web
+
+      subfolders:
+      - title: Objects
+        output: web, pdf
+
+        subfolderitems:
+        - title: Characters
+          url: /news.html
+          output: web
+
+          subfolders:
+          - title: NPC
+            output: web
+
+            subfolderitems:
+            - title: Mob
+              output: web
+              url: /news.html
+            - title: Cos
+              output: web
+              url: /news.html
+
+
+    - title: Skills
+      output: web, pdf
+      url: /mydoc_shard_skills.html
+      
+    - title: Regions
+      output: web, pdf
+      url: /mydoc_shard_regions.html
+      
+    - title: Instances
+      output: web, pdf
+      url: /mydoc_shard_instances.html
+      
+    - title: Quests
+      output: web, pdf
+      url: /mydoc_shard_quests.html
+      
+    - title: TriJob
+      output: web, pdf
+      url: /mydoc_shard_trijob.html
+      
+    - title: Training Camp
+      output: web, pdf
+      url: /mydoc_shard_trainingcamp.html
+      
+    - title: Triggers
+      output: web, pdf
+      url: /mydoc_shard_triggers.html
+      
+    - title: Siege
+      output: web, pdf
+      url: /mydoc_shard_siege.html
+      
+    - title: Drops
+      output: web, pdf
+      url: /mydoc_shard_drops.html
+      
+    - title: Teleports
+      output: web, pdf
+      url: /mydoc_shard_teleports.html
+      
+    - title: Magic Option
+      output: web, pdf
+      url: /mydoc_shard_magicoption.html
+
+
+
+
+
+  
