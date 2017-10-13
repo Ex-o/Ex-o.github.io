@@ -4,10 +4,32 @@
 
 
 {
-"title": "Round 1 Results",
+"title": "Alexandria&#39;s Contestants",
 "tags": "",
 "keywords": "results",
-"url": "a2oj_results",
+"url": "a2oj_alex_results",
+"summary": "Enjoy stalking."
+}
+,
+
+
+
+{
+"title": "Cairo&#39;s Contestants",
+"tags": "",
+"keywords": "results",
+"url": "a2oj_cairo_results",
+"summary": "Enjoy stalking."
+}
+,
+
+
+
+{
+"title": "Upper Egypt&#39;s Contestants",
+"tags": "",
+"keywords": "results",
+"url": "a2oj_uegypt_results",
 "summary": "Enjoy stalking."
 }
 ,

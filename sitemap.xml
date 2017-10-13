@@ -8,7 +8,19 @@
   
   
   <url>
-    <loc>http://localhost:4000/a2oj_results</loc>
+    <loc>http://localhost:4000/a2oj_alex_results</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/a2oj_cairo_results</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/a2oj_uegypt_results</loc>
   </url>
   
   
