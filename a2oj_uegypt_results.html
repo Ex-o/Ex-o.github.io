@@ -26,7 +26,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="js/toc.js"></script>
 <script src="js/customscripts.js"></script>
-
 <link rel="shortcut icon" href="images/favicon.ico">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -71,6 +70,11 @@
 
     </script>
     <script>
+        $(document.links).filter(function() {
+    return this.hostname != window.location.hostname;
+        }).attr('target', '_blank');
+    </script>
+    <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
@@ -96,12 +100,24 @@
          Cpurpleit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
       -->
     <script>
+        var links = document.querySelectorAll( '.post-content a' );  
+        for (var i = 0, length = links.length; i < length; i++) {  
+            if (links[i].hostname != window.location.hostname) {
+                links[i].target = '_blank';
+            }
+        }
+    </script>  
+    <script>
       $(document).ready(function(){
           $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
           $('table.display').DataTable( {
               paging: true,
               stateSave: true,
               searching: true,
+              aLengthMenu: [
+                 [10, 25, 50, 100, 200, -1],
+                 [10, 25, 50, 100, 200, "All"]
+                             ],
               "orderClasses": false,
               "createdRow": function( row, data, dataIndex ) {
                  if (data[3] < 1200)
@@ -646,6 +662,69 @@ $('#toc').on('click', 'a', function() {
       <td>1453</td>
       <td>1453</td>
     </tr>
+    <tr>
+      <td>556</td>
+      <td><a href="https://a2oj.com/profile?Username=Mohammed_Atef_Hassan">Mohammed_Atef_Hassan</a></td>
+      <td><a href="http://codeforces.com/profile/Mohammed_Atef_Hassan">Mohammed_Atef_Hassan</a></td>
+      <td>1003</td>
+      <td>1385</td>
+    </tr>
+    <tr>
+      <td>386</td>
+      <td><a href="https://a2oj.com/profile?Username=AbdEl-Rahman+Naser">AbdEl-Rahman+Naser</a></td>
+      <td><a href="http://codeforces.com/profile/AbdElRahman-Naser">AbdElRahman-Naser</a></td>
+      <td>1017</td>
+      <td>1380</td>
+    </tr>
+    <tr>
+      <td>760</td>
+      <td><a href="https://a2oj.com/profile?Username=ahmed+1234">ahmed+1234</a></td>
+      <td><a href="http://codeforces.com/profile/AD_1010">AD_1010</a></td>
+      <td>1267</td>
+      <td>1378</td>
+    </tr>
+    <tr>
+      <td>557</td>
+      <td><a href="https://a2oj.com/profile?Username=ahmed_">ahmed_</a></td>
+      <td><a href="http://codeforces.com/profile/AhmedZaky">AhmedZaky</a></td>
+      <td>1246</td>
+      <td>1434</td>
+    </tr>
+    <tr>
+      <td>557</td>
+      <td><a href="https://a2oj.com/profile?Username=ahmed_">ahmed_</a></td>
+      <td><a href="http://codeforces.com/profile/AhmedZaky">AhmedZaky</a></td>
+      <td>1246</td>
+      <td>1434</td>
+    </tr>
+    <tr>
+      <td>226</td>
+      <td><a href="https://a2oj.com/profile?Username=xmarcoied">xmarcoied</a></td>
+      <td><a href="http://codeforces.com/profile/harry.coder">harry.coder</a></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td><a href="https://a2oj.com/profile?Username=mosta7il_">mosta7il_</a></td>
+      <td><a href="http://codeforces.com/profile/mosta7il_">mosta7il_</a></td>
+      <td>1346</td>
+      <td>1519</td>
+    </tr>
+    <tr>
+      <td>295</td>
+      <td><a href="https://a2oj.com/profile?Username=hussien_egyptian">hussien_egyptian</a></td>
+      <td><a href="http://codeforces.com/profile/HussienIbrahiem">HussienIbrahiem</a></td>
+      <td>1690</td>
+      <td>1729</td>
+    </tr>
+    <tr>
+      <td>266</td>
+      <td><a href="https://a2oj.com/profile?Username=Emsawy">Emsawy</a></td>
+      <td><a href="http://codeforces.com/profile/Emsawy">Emsawy</a></td>
+      <td>1404</td>
+      <td>1730</td>
+    </tr>
   </tbody>
 </table>
 
@@ -665,7 +744,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Fayox. All rights reserved. <br />
- Site last updated: Oct 14, 2017 <br />
+ Site last updated: Oct 15, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>

@@ -26,7 +26,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
 <script src="js/toc.js"></script>
 <script src="js/customscripts.js"></script>
-
 <link rel="shortcut icon" href="images/favicon.ico">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -71,6 +70,11 @@
 
     </script>
     <script>
+        $(document.links).filter(function() {
+    return this.hostname != window.location.hostname;
+        }).attr('target', '_blank');
+    </script>
+    <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
@@ -96,12 +100,24 @@
          Cpurpleit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
       -->
     <script>
+        var links = document.querySelectorAll( '.post-content a' );  
+        for (var i = 0, length = links.length; i < length; i++) {  
+            if (links[i].hostname != window.location.hostname) {
+                links[i].target = '_blank';
+            }
+        }
+    </script>  
+    <script>
       $(document).ready(function(){
           $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
           $('table.display').DataTable( {
               paging: true,
               stateSave: true,
               searching: true,
+              aLengthMenu: [
+                 [10, 25, 50, 100, 200, -1],
+                 [10, 25, 50, 100, 200, "All"]
+                             ],
               "orderClasses": false,
               "createdRow": function( row, data, dataIndex ) {
                  if (data[3] < 1200)
@@ -337,7 +353,7 @@ $('#toc').on('click', 'a', function() {
 <table>
   <thead>
     <tr>
-      <th>Rank</th>
+      <th>Round 1 Rank</th>
       <th>A2OJ</th>
       <th>Codeforces</th>
       <th>Rating</th>
@@ -346,483 +362,371 @@ $('#toc').on('click', 'a', function() {
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
-      <td><a href="https://a2oj.com/profile?Username=sherif_waly"><strong><span style="color:white">SherifWaly</span></strong></a></td>
+      <td>449</td>
+      <td><a href="https://a2oj.com/profile?Username=sherif_waly">sherif_waly</a></td>
       <td><a href="http://codeforces.com/profile/SherifWaly">SherifWaly</a></td>
       <td>1569</td>
       <td>1647</td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>273</td>
       <td><a href="https://a2oj.com/profile?Username=AmrMahmoud">AmrMahmoud</a></td>
       <td><a href="http://codeforces.com/profile/AmrMahmoud">AmrMahmoud</a></td>
       <td>2105</td>
       <td>2400</td>
     </tr>
     <tr>
-      <td>3</td>
+      <td>192</td>
       <td><a href="https://a2oj.com/profile?Username=la7ek">la7ek</a></td>
       <td><a href="http://codeforces.com/profile/zoomer">zoomer</a></td>
       <td>1715</td>
       <td>1715</td>
     </tr>
     <tr>
-      <td>5</td>
-      <td><a href="https://a2oj.com/profile?Username=zoooma13">zoooma13</a></td>
-      <td><a href="http://codeforces.com/profile/zoooma13">zoooma13</a></td>
-      <td>1455</td>
-      <td>1507</td>
-    </tr>
-    <tr>
-      <td>6</td>
+      <td>329</td>
       <td><a href="https://a2oj.com/profile?Username=AmrMaghraby">AmrMaghraby</a></td>
       <td><a href="http://codeforces.com/profile/Amr_Maghraby">Amr_Maghraby</a></td>
       <td>1075</td>
       <td>1382</td>
     </tr>
     <tr>
-      <td>7</td>
+      <td>85</td>
       <td><a href="https://a2oj.com/profile?Username=MadCoder">MadCoder</a></td>
       <td><a href="http://codeforces.com/profile/KhaleD_">KhaleD_</a></td>
       <td>1913</td>
       <td>1913</td>
     </tr>
     <tr>
-      <td>8</td>
+      <td>280</td>
       <td><a href="https://a2oj.com/profile?Username=mo7amed_a7med">mo7amed_a7med</a></td>
       <td><a href="http://codeforces.com/profile/mo7amed_a7med">mo7amed_a7med</a></td>
       <td>1344</td>
       <td>1506</td>
     </tr>
     <tr>
-      <td>9</td>
+      <td>256</td>
       <td><a href="https://a2oj.com/profile?Username=sunshine1">sunshine1</a></td>
       <td><a href="http://codeforces.com/profile/sunshine1">sunshine1</a></td>
       <td>1248</td>
       <td>1417</td>
     </tr>
     <tr>
-      <td>10</td>
+      <td>700</td>
       <td><a href="https://a2oj.com/profile?Username=ayman996">ayman996</a></td>
       <td><a href="http://codeforces.com/profile/ayman996">ayman996</a></td>
       <td>1449</td>
       <td>1518</td>
     </tr>
     <tr>
-      <td>11</td>
+      <td>263</td>
       <td><a href="https://a2oj.com/profile?Username=MohamedMashaal">MohamedMashaal</a></td>
       <td><a href="http://codeforces.com/profile/MohamedMashaal">MohamedMashaal</a></td>
       <td>1235</td>
       <td>1418</td>
     </tr>
     <tr>
-      <td>13</td>
+      <td>260</td>
       <td><a href="https://a2oj.com/profile?Username=Youssef_Ali">Youssef_Ali</a></td>
       <td><a href="http://codeforces.com/profile/Youssef_Ali">Youssef_Ali</a></td>
       <td>1320</td>
       <td>1411</td>
     </tr>
     <tr>
-      <td>14</td>
+      <td>736</td>
       <td><a href="https://a2oj.com/profile?Username=ramo">ramo</a></td>
       <td><a href="http://codeforces.com/profile/amr.ramadan">amr.ramadan</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>15</td>
+      <td>441</td>
       <td><a href="https://a2oj.com/profile?Username=A.Ehab">A.Ehab</a></td>
       <td><a href="http://codeforces.com/profile/Red_Phoenix">Red_Phoenix</a></td>
       <td>1315</td>
       <td>1426</td>
     </tr>
     <tr>
-      <td>16</td>
+      <td>130</td>
       <td><a href="https://a2oj.com/profile?Username=MohamedMahmoud">MohamedMahmoud</a></td>
       <td><a href="http://codeforces.com/profile/MohamedMahmoudHassan">MohamedMahmoudHassan</a></td>
       <td>1325</td>
       <td>1445</td>
     </tr>
     <tr>
-      <td>17</td>
+      <td>692</td>
       <td><a href="https://a2oj.com/profile?Username=mourad00">mourad00</a></td>
       <td><a href="http://codeforces.com/profile/mourad00">mourad00</a></td>
       <td>1373</td>
       <td>1373</td>
     </tr>
     <tr>
-      <td>18</td>
+      <td>80</td>
       <td><a href="https://a2oj.com/profile?Username=Mahmoud_Fekry">Mahmoud_Fekry</a></td>
       <td><a href="http://codeforces.com/profile/Mahmoud_Fekry">Mahmoud_Fekry</a></td>
       <td>1065</td>
       <td>1404</td>
     </tr>
     <tr>
-      <td>19</td>
+      <td>70</td>
       <td><a href="https://a2oj.com/profile?Username=Roshdy">Roshdy</a></td>
       <td><a href="http://codeforces.com/profile/Roshdy">Roshdy</a></td>
       <td>1320</td>
       <td>1528</td>
     </tr>
     <tr>
-      <td>20</td>
+      <td>46</td>
       <td><a href="https://a2oj.com/profile?Username=Abdelrahman_ramadan">Abdelrahman_ramadan</a></td>
       <td><a href="http://codeforces.com/profile/Abdelrahman_Ramadan_">Abdelrahman_Ramadan_</a></td>
       <td>1952</td>
       <td>1960</td>
     </tr>
     <tr>
-      <td>21</td>
-      <td><a href="https://a2oj.com/profile?Username=MohamedGb">MohamedGb</a></td>
-      <td><a href="http://codeforces.com/profile/Mohamedgb514">Mohamedgb514</a></td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td><a href="https://a2oj.com/profile?Username=Omar+Elawady">Omar+Elawady</a></td>
-      <td><a href="http://codeforces.com/profile/Omar_Elawady">Omar_Elawady</a></td>
-      <td>1712</td>
-      <td>1766</td>
-    </tr>
-    <tr>
-      <td>23</td>
+      <td>144</td>
       <td><a href="https://a2oj.com/profile?Username=salma_yehia">salma_yehia</a></td>
       <td><a href="http://codeforces.com/profile/salma_yehia">salma_yehia</a></td>
       <td>1413</td>
       <td>1413</td>
     </tr>
     <tr>
-      <td>25</td>
+      <td>222</td>
       <td><a href="https://a2oj.com/profile?Username=Sharaf_47">Sharaf_47</a></td>
       <td><a href="http://codeforces.com/profile/Sharaf47">Sharaf47</a></td>
       <td>1385</td>
       <td>1385</td>
     </tr>
     <tr>
-      <td>26</td>
-      <td><a href="https://a2oj.com/profile?Username=omarkhaledd">omarkhaledd</a></td>
-      <td><a href="http://codeforces.com/profile/abc_">abc_</a></td>
-      <td>1734</td>
-      <td>1770</td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td><a href="https://a2oj.com/profile?Username=Mohamed+Samir95">Mohamed+Samir95</a></td>
-      <td><a href="http://codeforces.com/profile/m.samir">m.samir</a></td>
-      <td>1584</td>
-      <td>1584</td>
-    </tr>
-    <tr>
-      <td>29</td>
+      <td>798</td>
       <td><a href="https://a2oj.com/profile?Username=Abdelrahman-Fouad">Abdelrahman-Fouad</a></td>
       <td><a href="http://codeforces.com/profile/AbdurRahman-foud">AbdurRahman-foud</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>30</td>
+      <td>90</td>
       <td><a href="https://a2oj.com/profile?Username=mahmoud.saied">mahmoud.saied</a></td>
       <td><a href="http://codeforces.com/profile/Truncourist">Truncourist</a></td>
       <td>1616</td>
       <td>1915</td>
     </tr>
     <tr>
-      <td>31</td>
+      <td>63</td>
       <td><a href="https://a2oj.com/profile?Username=dmahmou213">dmahmou213</a></td>
       <td><a href="http://codeforces.com/profile/dmahmou213">dmahmou213</a></td>
       <td>1304</td>
       <td>1376</td>
     </tr>
     <tr>
-      <td>33</td>
-      <td><a href="https://a2oj.com/profile?Username=zyad_galal">zyad_galal</a></td>
-      <td><a href="http://codeforces.com/profile/Zyad_Galal">Zyad_Galal</a></td>
-      <td>1319</td>
-      <td>1374</td>
-    </tr>
-    <tr>
-      <td>35</td>
-      <td><a href="https://a2oj.com/profile?Username=ma7moud_tarek">ma7moud_tarek</a></td>
-      <td><a href="http://codeforces.com/profile/_ma7moud_tarek97">_ma7moud_tarek97</a></td>
-      <td>1361</td>
-      <td>1408</td>
-    </tr>
-    <tr>
-      <td>36</td>
+      <td>469</td>
       <td><a href="https://a2oj.com/profile?Username=mohabosamah">mohabosamah</a></td>
       <td><a href="http://codeforces.com/profile/MohabOsamah">MohabOsamah</a></td>
       <td>1236</td>
       <td>1375</td>
     </tr>
     <tr>
-      <td>37</td>
+      <td>276</td>
       <td><a href="https://a2oj.com/profile?Username=pbbassily">pbbassily</a></td>
       <td><a href="http://codeforces.com/profile/PBoules12">PBoules12</a></td>
       <td>1192</td>
       <td>1413</td>
     </tr>
     <tr>
-      <td>38</td>
+      <td>372</td>
       <td><a href="https://a2oj.com/profile?Username=esraahashish">esraahashish</a></td>
       <td><a href="http://codeforces.com/profile/esraahashish">esraahashish</a></td>
       <td>1288</td>
       <td>1409</td>
     </tr>
     <tr>
-      <td>39</td>
+      <td>417</td>
       <td><a href="https://a2oj.com/profile?Username=mohanad2021996">mohanad2021996</a></td>
       <td><a href="http://codeforces.com/profile/Mohanad_Elmaghrby">Mohanad_Elmaghrby</a></td>
       <td>1297</td>
       <td>1382</td>
     </tr>
     <tr>
-      <td>40</td>
+      <td>341</td>
       <td><a href="https://a2oj.com/profile?Username=MSolomon">MSolomon</a></td>
       <td><a href="http://codeforces.com/profile/MSolomon">MSolomon</a></td>
       <td>1250</td>
       <td>1405</td>
     </tr>
     <tr>
-      <td>41</td>
+      <td>486</td>
       <td><a href="https://a2oj.com/profile?Username=omarsamy09">omarsamy09</a></td>
       <td><a href="http://codeforces.com/profile/omarsamy09">omarsamy09</a></td>
       <td>1387</td>
       <td>1387</td>
     </tr>
     <tr>
-      <td>45</td>
+      <td>229</td>
       <td><a href="https://a2oj.com/profile?Username=snipex">snipex</a></td>
       <td><a href="http://codeforces.com/profile/snipex">snipex</a></td>
       <td>1237</td>
       <td>1383</td>
     </tr>
     <tr>
-      <td>46</td>
+      <td>95</td>
       <td><a href="https://a2oj.com/profile?Username=Kyrillos">Kyrillos</a></td>
       <td><a href="http://codeforces.com/profile/kyrillos_boshra">kyrillos_boshra</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>48</td>
-      <td><a href="https://a2oj.com/profile?Username=ahmdalgendi">ahmdalgendi</a></td>
-      <td><a href="http://codeforces.com/profile/ahmdalgendi">ahmdalgendi</a></td>
-      <td>1077</td>
-      <td>1381</td>
-    </tr>
-    <tr>
-      <td>49</td>
+      <td>132</td>
       <td><a href="https://a2oj.com/profile?Username=ahmedalaaz">ahmedalaaz</a></td>
       <td><a href="http://codeforces.com/profile/Ahmed_Alansary">Ahmed_Alansary</a></td>
       <td>1406</td>
       <td>1406</td>
     </tr>
     <tr>
-      <td>50</td>
+      <td>517</td>
       <td><a href="https://a2oj.com/profile?Username=N.Einstein">N.Einstein</a></td>
       <td><a href="http://codeforces.com/profile/N.Einstein">N.Einstein</a></td>
       <td>1418</td>
       <td>1418</td>
     </tr>
     <tr>
-      <td>53</td>
+      <td>418</td>
       <td><a href="https://a2oj.com/profile?Username=hazefully">hazefully</a></td>
       <td><a href="http://codeforces.com/profile/hazefully">hazefully</a></td>
       <td>1475</td>
       <td>1528</td>
     </tr>
     <tr>
-      <td>54</td>
+      <td>336</td>
       <td><a href="https://a2oj.com/profile?Username=ola_amin">ola_amin</a></td>
       <td><a href="http://codeforces.com/profile/ola_amin">ola_amin</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>55</td>
+      <td>465</td>
       <td><a href="https://a2oj.com/profile?Username=youssef_ahmed">youssef_ahmed</a></td>
       <td><a href="http://codeforces.com/profile/Youssef_Ahmed">Youssef_Ahmed</a></td>
       <td>1141</td>
       <td>1395</td>
     </tr>
     <tr>
-      <td>57</td>
+      <td>620</td>
       <td><a href="https://a2oj.com/profile?Username=hsalah">hsalah</a></td>
       <td><a href="http://codeforces.com/profile/HeshamSalah">HeshamSalah</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>58</td>
+      <td>41</td>
       <td><a href="https://a2oj.com/profile?Username=Darksinian">Darksinian</a></td>
       <td><a href="http://codeforces.com/profile/Darksinian">Darksinian</a></td>
       <td>1681</td>
       <td>1681</td>
     </tr>
     <tr>
-      <td>59</td>
+      <td>445</td>
       <td><a href="https://a2oj.com/profile?Username=MohamedMagdy">MohamedMagdy</a></td>
       <td><a href="http://codeforces.com/profile/MohamedMagdySoukar">MohamedMagdySoukar</a></td>
       <td>1426</td>
       <td>1426</td>
     </tr>
     <tr>
-      <td>60</td>
+      <td>269</td>
       <td><a href="https://a2oj.com/profile?Username=Ahmed-">Ahmed-</a></td>
       <td><a href="http://codeforces.com/profile/Ahmed-">Ahmed-</a></td>
       <td>1657</td>
       <td>1895</td>
     </tr>
     <tr>
-      <td>61</td>
-      <td><a href="https://a2oj.com/profile?Username=Awalid">Awalid</a></td>
-      <td><a href="http://codeforces.com/profile/Awalid">Awalid</a></td>
-      <td>1420</td>
-      <td>1529</td>
-    </tr>
-    <tr>
-      <td>63</td>
-      <td><a href="https://a2oj.com/profile?Username=moustafa+sayed">moustafa+sayed</a></td>
-      <td><a href="http://codeforces.com/profile/futureeng77">futureeng77</a></td>
-      <td>1075</td>
-      <td>1410</td>
-    </tr>
-    <tr>
-      <td>64</td>
+      <td>537</td>
       <td><a href="https://a2oj.com/profile?Username=Abo_Med7at">Abo_Med7at</a></td>
       <td><a href="http://codeforces.com/profile/Abo_Med7at">Abo_Med7at</a></td>
       <td>1319</td>
       <td>1401</td>
     </tr>
     <tr>
-      <td>65</td>
+      <td>312</td>
       <td><a href="https://a2oj.com/profile?Username=kyacout">kyacout</a></td>
       <td><a href="http://codeforces.com/profile/kyacout">kyacout</a></td>
       <td>1476</td>
       <td>1660</td>
     </tr>
     <tr>
-      <td>67</td>
+      <td>686</td>
       <td><a href="https://a2oj.com/profile?Username=shadyadel">shadyadel</a></td>
       <td><a href="http://codeforces.com/profile/Shady_Adel">Shady_Adel</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>68</td>
+      <td>339</td>
       <td><a href="https://a2oj.com/profile?Username=HuLkoOvIc">HuLkoOvIc</a></td>
       <td><a href="http://codeforces.com/profile/HuLkoOovIc">HuLkoOovIc</a></td>
       <td>1250</td>
       <td>1398</td>
     </tr>
     <tr>
-      <td>70</td>
-      <td><a href="https://a2oj.com/profile?Username=AhmedKhaled011">AhmedKhaled011</a></td>
-      <td><a href="http://codeforces.com/profile/.AhmedKhaled.">.AhmedKhaled.</a></td>
-      <td>1412</td>
-      <td>1500</td>
-    </tr>
-    <tr>
-      <td>71</td>
-      <td><a href="https://a2oj.com/profile?Username=Alex_D.Cooper">Alex_D.Cooper</a></td>
-      <td><a href="http://codeforces.com/profile/Jack2000">Jack2000</a></td>
-      <td>1168</td>
-      <td>1376</td>
-    </tr>
-    <tr>
-      <td>72</td>
-      <td><a href="https://a2oj.com/profile?Username=omar-alezaby">omar-alezaby</a></td>
-      <td><a href="http://codeforces.com/profile/Omar-Alezaby">Omar-Alezaby</a></td>
-      <td>1412</td>
-      <td>1412</td>
-    </tr>
-    <tr>
-      <td>73</td>
-      <td><a href="https://a2oj.com/profile?Username=abdelrahman+saied">abdelrahman+saied</a></td>
-      <td><a href="http://codeforces.com/profile/abdelrahmansaied92">abdelrahmansaied92</a></td>
-      <td>1272</td>
-      <td>1385</td>
-    </tr>
-    <tr>
-      <td>74</td>
-      <td><a href="https://a2oj.com/profile?Username=Fady_Ahdy8">Fady_Ahdy8</a></td>
-      <td><a href="http://codeforces.com/profile/Fady_Ahdy8">Fady_Ahdy8</a></td>
-      <td>1334</td>
-      <td>1400</td>
-    </tr>
-    <tr>
-      <td>76</td>
+      <td>785</td>
       <td><a href="https://a2oj.com/profile?Username=helldash">helldash</a></td>
       <td><a href="http://codeforces.com/profile/helldash">helldash</a></td>
       <td>870</td>
       <td>1373</td>
     </tr>
     <tr>
-      <td>78</td>
+      <td>711</td>
+      <td><a href="https://a2oj.com/profile?Username=turbo_power">turbo_power</a></td>
+      <td><a href="http://codeforces.com/profile/turbo_power">turbo_power</a></td>
+      <td>1280</td>
+      <td>1372</td>
+    </tr>
+    <tr>
+      <td>28</td>
       <td><a href="https://a2oj.com/profile?Username=godel">godel</a></td>
       <td><a href="http://codeforces.com/profile/gamel">gamel</a></td>
       <td>1466</td>
       <td>1480</td>
     </tr>
     <tr>
-      <td>80</td>
+      <td>489</td>
       <td><a href="https://a2oj.com/profile?Username=MohamedAhmed04">MohamedAhmed04</a></td>
       <td><a href="http://codeforces.com/profile/MohamedAhmed04">MohamedAhmed04</a></td>
       <td>1110</td>
       <td>1378</td>
     </tr>
     <tr>
-      <td>82</td>
+      <td>775</td>
       <td><a href="https://a2oj.com/profile?Username=3fyfy">3fyfy</a></td>
       <td><a href="http://codeforces.com/profile/3fyfy">3fyfy</a></td>
       <td>1379</td>
       <td>1379</td>
     </tr>
     <tr>
-      <td>83</td>
-      <td><a href="https://a2oj.com/profile?Username=Maged+Milad">Maged+Milad</a></td>
-      <td><a href="http://codeforces.com/profile/MagedMilad">MagedMilad</a></td>
-      <td>1604</td>
-      <td>1657</td>
-    </tr>
-    <tr>
-      <td>84</td>
+      <td>415</td>
       <td><a href="https://a2oj.com/profile?Username=khaledawaled">khaledawaled</a></td>
       <td><a href="http://codeforces.com/profile/khaledawaled">khaledawaled</a></td>
       <td>1468</td>
       <td>1526</td>
     </tr>
     <tr>
-      <td>85</td>
+      <td>39</td>
       <td><a href="https://a2oj.com/profile?Username=Sh1co">Sh1co</a></td>
       <td><a href="http://codeforces.com/profile/Sh1co">Sh1co</a></td>
       <td>1542</td>
       <td>1542</td>
     </tr>
     <tr>
-      <td>86</td>
+      <td>687</td>
       <td><a href="https://a2oj.com/profile?Username=muhamed97">muhamed97</a></td>
       <td><a href="http://codeforces.com/profile/muhamed97">muhamed97</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>87</td>
-      <td><a href="https://a2oj.com/profile?Username=mohammed+deifallah">mohammed+deifallah</a></td>
-      <td><a href="http://codeforces.com/profile/Mohammed_Deifallah">Mohammed_Deifallah</a></td>
-      <td>1200</td>
-      <td>1398</td>
-    </tr>
-    <tr>
-      <td>88</td>
+      <td>123</td>
       <td><a href="https://a2oj.com/profile?Username=M.Lotfy96">M.Lotfy96</a></td>
       <td><a href="http://codeforces.com/profile/M.Lotfy96">M.Lotfy96</a></td>
       <td>1409</td>
       <td>1455</td>
     </tr>
     <tr>
-      <td>90</td>
+      <td>490</td>
       <td><a href="https://a2oj.com/profile?Username=Samao_Ofoad">Samao_Ofoad</a></td>
       <td><a href="http://codeforces.com/profile/Samao_Ofoad">Samao_Ofoad</a></td>
       <td>1408</td>
@@ -836,116 +740,270 @@ $('#toc').on('click', 'a', function() {
       <td>1486</td>
     </tr>
     <tr>
-      <td>92</td>
+      <td>344</td>
       <td><a href="https://a2oj.com/profile?Username=kemega">kemega</a></td>
       <td><a href="http://codeforces.com/profile/kemega">kemega</a></td>
       <td>1215</td>
       <td>1402</td>
     </tr>
     <tr>
-      <td>93</td>
+      <td>200</td>
       <td><a href="https://a2oj.com/profile?Username=amr_hendy">amr_hendy</a></td>
       <td><a href="http://codeforces.com/profile/amr_hendy">amr_hendy</a></td>
       <td>1635</td>
       <td>1635</td>
     </tr>
     <tr>
-      <td>94</td>
+      <td>757</td>
       <td><a href="https://a2oj.com/profile?Username=GhofranAbdelwahab">GhofranAbdelwahab</a></td>
       <td><a href="http://codeforces.com/profile/GhofranAbdelwahab">GhofranAbdelwahab</a></td>
       <td>1243</td>
       <td>1464</td>
     </tr>
     <tr>
-      <td>95</td>
+      <td>128</td>
       <td><a href="https://a2oj.com/profile?Username=ShrookWafa">ShrookWafa</a></td>
       <td><a href="http://codeforces.com/profile/ShrookWafa">ShrookWafa</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>96</td>
+      <td>633</td>
       <td><a href="https://a2oj.com/profile?Username=EL-BADRY">EL-BADRY</a></td>
       <td><a href="http://codeforces.com/profile/EL-BADRY">EL-BADRY</a></td>
       <td>1098</td>
       <td>1402</td>
     </tr>
     <tr>
-      <td>97</td>
+      <td>71</td>
       <td><a href="https://a2oj.com/profile?Username=OsamaAlkhodairy">OsamaAlkhodairy</a></td>
       <td><a href="http://codeforces.com/profile/Osama_Alkhodairy">Osama_Alkhodairy</a></td>
       <td>1390</td>
       <td>1589</td>
     </tr>
     <tr>
-      <td>98</td>
+      <td>378</td>
       <td><a href="https://a2oj.com/profile?Username=Showstopper728">Showstopper728</a></td>
       <td><a href="http://codeforces.com/profile/ShowStopper728">ShowStopper728</a></td>
       <td>1164</td>
       <td>1385</td>
     </tr>
     <tr>
-      <td>99</td>
+      <td>3</td>
       <td><a href="https://a2oj.com/profile?Username=mohammedehab2002">mohammedehab2002</a></td>
       <td><a href="http://codeforces.com/profile/mohammedehab2002">mohammedehab2002</a></td>
       <td>1744</td>
       <td>1837</td>
     </tr>
     <tr>
-      <td>100</td>
+      <td>497</td>
       <td><a href="https://a2oj.com/profile?Username=geeky.omar">geeky.omar</a></td>
       <td><a href="http://codeforces.com/profile/geeky.omar">geeky.omar</a></td>
       <td>1098</td>
       <td>1373</td>
     </tr>
     <tr>
-      <td>101</td>
-      <td><a href="https://a2oj.com/profile?Username=AmmarElshamy">AmmarElshamy</a></td>
-      <td><a href="http://codeforces.com/profile/AmmarElshamy">AmmarElshamy</a></td>
-      <td>1344</td>
-      <td>1484</td>
-    </tr>
-    <tr>
-      <td>102</td>
+      <td>429</td>
       <td><a href="https://a2oj.com/profile?Username=ameguid12">ameguid12</a></td>
       <td><a href="http://codeforces.com/profile/ameguid12">ameguid12</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>103</td>
+      <td>279</td>
       <td><a href="https://a2oj.com/profile?Username=ahmed.m5">ahmed.m5</a></td>
       <td><a href="http://codeforces.com/profile/Ahmed_Morsy">Ahmed_Morsy</a></td>
       <td>1669</td>
       <td>1829</td>
     </tr>
     <tr>
-      <td>104</td>
-      <td><a href="https://a2oj.com/profile?Username=Khaled-Abdelrahman">Khaled-Abdelrahman</a></td>
-      <td><a href="http://codeforces.com/profile/Laggy">Laggy</a></td>
-      <td>1342</td>
-      <td>1419</td>
-    </tr>
-    <tr>
-      <td>105</td>
+      <td>350</td>
       <td><a href="https://a2oj.com/profile?Username=RelyOnTheTruth">RelyOnTheTruth</a></td>
       <td><a href="http://codeforces.com/profile/RelyOnTheTruth">RelyOnTheTruth</a></td>
       <td>1237</td>
       <td>1410</td>
     </tr>
     <tr>
-      <td>106</td>
+      <td>233</td>
       <td><a href="https://a2oj.com/profile?Username=M0hammad">M0hammad</a></td>
       <td><a href="http://codeforces.com/profile/M0hammad">M0hammad</a></td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <td>107</td>
-      <td><a href="https://a2oj.com/profile?Username=ahmed_">ahmed_</a></td>
-      <td><a href="http://codeforces.com/profile/AhmedZaky">AhmedZaky</a></td>
-      <td>1246</td>
-      <td>1434</td>
+      <td>45</td>
+      <td><a href="https://a2oj.com/profile?Username=Mohumed_Salah">Mohumed_Salah</a></td>
+      <td><a href="http://codeforces.com/profile/mohumed_salah">mohumed_salah</a></td>
+      <td>1383</td>
+      <td>1469</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td><a href="https://a2oj.com/profile?Username=akram.sameer">akram.sameer</a></td>
+      <td><a href="http://codeforces.com/profile/akram_samir">akram_samir</a></td>
+      <td>1214</td>
+      <td>1408</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td><a href="https://a2oj.com/profile?Username=mohammedbashar">mohammedbashar</a></td>
+      <td><a href="http://codeforces.com/profile/MohammedBashar">MohammedBashar</a></td>
+      <td>1252</td>
+      <td>1372</td>
+    </tr>
+    <tr>
+      <td>551</td>
+      <td><a href="https://a2oj.com/profile?Username=mohamedsalama">mohamedsalama</a></td>
+      <td><a href="http://codeforces.com/profile/mohamed_salama">mohamed_salama</a></td>
+      <td>1389</td>
+      <td>1532</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td><a href="https://a2oj.com/profile?Username=abuGalala">abuGalala</a></td>
+      <td><a href="http://codeforces.com/profile/bu_galala">bu_galala</a></td>
+      <td>1281</td>
+      <td>1388</td>
+    </tr>
+    <tr>
+      <td>617</td>
+      <td><a href="https://a2oj.com/profile?Username=Fady_Ahdy8">Fady_Ahdy8</a></td>
+      <td><a href="http://codeforces.com/profile/Fady_Ahdy8">Fady_Ahdy8</a></td>
+      <td>1334</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <td>124</td>
+      <td><a href="https://a2oj.com/profile?Username=AmmarElshamy">AmmarElshamy</a></td>
+      <td><a href="http://codeforces.com/profile/AmmarElshamy">AmmarElshamy</a></td>
+      <td>1344</td>
+      <td>1484</td>
+    </tr>
+    <tr>
+      <td>308</td>
+      <td><a href="https://a2oj.com/profile?Username=Awalid">Awalid</a></td>
+      <td><a href="http://codeforces.com/profile/Awalid">Awalid</a></td>
+      <td>1420</td>
+      <td>1529</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td><a href="https://a2oj.com/profile?Username=Khaled-Abdelrahman">Khaled-Abdelrahman</a></td>
+      <td><a href="http://codeforces.com/profile/Laggy">Laggy</a></td>
+      <td>1342</td>
+      <td>1419</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td><a href="https://a2oj.com/profile?Username=amrkerr">amrkerr</a></td>
+      <td><a href="http://codeforces.com/profile/Will.It.Tornado">Will.It.Tornado</a></td>
+      <td>1776</td>
+      <td>1776</td>
+    </tr>
+    <tr>
+      <td>642</td>
+      <td><a href="https://a2oj.com/profile?Username=mernazakaria">mernazakaria</a></td>
+      <td><a href="http://codeforces.com/profile/mernazakaria">mernazakaria</a></td>
+      <td>1441</td>
+      <td>1441</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td><a href="https://a2oj.com/profile?Username=zoooma13">zoooma13</a></td>
+      <td><a href="http://codeforces.com/profile/zoooma13">zoooma13</a></td>
+      <td>1455</td>
+      <td>1507</td>
+    </tr>
+    <tr>
+      <td>412</td>
+      <td><a href="https://a2oj.com/profile?Username=Mr.AAA">Mr.AAA</a></td>
+      <td><a href="http://codeforces.com/profile/Mr.AAA">Mr.AAA</a></td>
+      <td>1109</td>
+      <td>1482</td>
+    </tr>
+    <tr>
+      <td>322</td>
+      <td><a href="https://a2oj.com/profile?Username=omarkhaledd">omarkhaledd</a></td>
+      <td><a href="http://codeforces.com/profile/abc_">abc_</a></td>
+      <td>1734</td>
+      <td>1770</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td><a href="https://a2oj.com/profile?Username=Assassin-x">Assassin-x</a></td>
+      <td><a href="http://codeforces.com/profile/Quarz">Quarz</a></td>
+      <td>1853</td>
+      <td>1853</td>
+    </tr>
+    <tr>
+      <td>340</td>
+      <td><a href="https://a2oj.com/profile?Username=feleb">feleb</a></td>
+      <td><a href="http://codeforces.com/profile/feleb">feleb</a></td>
+      <td>1439</td>
+      <td>1439</td>
+    </tr>
+    <tr>
+      <td>677</td>
+      <td><a href="https://a2oj.com/profile?Username=amor_alaa">amor_alaa</a></td>
+      <td><a href="http://codeforces.com/profile/amor_alaa">amor_alaa</a></td>
+      <td>1378</td>
+      <td>1378</td>
+    </tr>
+    <tr>
+      <td>477</td>
+      <td><a href="https://a2oj.com/profile?Username=MohamedGb">MohamedGb</a></td>
+      <td><a href="http://codeforces.com/profile/Mohamedgb514">Mohamedgb514</a></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td><a href="https://a2oj.com/profile?Username=MarioBGW">MarioBGW</a></td>
+      <td><a href="http://codeforces.com/profile/Mario.bgw">Mario.bgw</a></td>
+      <td>1225</td>
+      <td>1423</td>
+    </tr>
+    <tr>
+      <td>302</td>
+      <td><a href="https://a2oj.com/profile?Username=ma7moud_tarek">ma7moud_tarek</a></td>
+      <td><a href="http://codeforces.com/profile/_ma7moud_tarek97">_ma7moud_tarek97</a></td>
+      <td>1361</td>
+      <td>1408</td>
+    </tr>
+    <tr>
+      <td>595</td>
+      <td><a href="https://a2oj.com/profile?Username=Phoenix3">Phoenix3</a></td>
+      <td><a href="http://codeforces.com/profile/sherlocked3">sherlocked3</a></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>802</td>
+      <td><a href="https://a2oj.com/profile?Username=isoprog">isoprog</a></td>
+      <td><a href="http://codeforces.com/profile/iso188">iso188</a></td>
+      <td>1174</td>
+      <td>1433</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td><a href="https://a2oj.com/profile?Username=zyad_galal">zyad_galal</a></td>
+      <td><a href="http://codeforces.com/profile/Zyad_Galal">Zyad_Galal</a></td>
+      <td>1319</td>
+      <td>1374</td>
+    </tr>
+    <tr>
+      <td>499</td>
+      <td><a href="https://a2oj.com/profile?Username=Nahla_Galal">Nahla_Galal</a></td>
+      <td><a href="http://codeforces.com/profile/Nahla_Galal">Nahla_Galal</a></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>247</td>
+      <td><a href="https://a2oj.com/profile?Username=nesrin">nesrin</a></td>
+      <td><a href="http://codeforces.com/profile/Nesrin">Nesrin</a></td>
+      <td>1573</td>
+      <td>1728</td>
     </tr>
   </tbody>
 </table>
@@ -966,7 +1024,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Fayox. All rights reserved. <br />
- Site last updated: Oct 14, 2017 <br />
+ Site last updated: Oct 15, 2017 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
