@@ -1,0 +1,28 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product:
+  version:
+  folders:
+
+  - title: Regions
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: Cairo
+      url: /a2oj_cairo_results
+      output: web
+      type: frontmatter
+    - title: Alexandria
+      url: /a2oj_alex_results
+      output: web
+      type: frontmatter
+    - title: Upper Egypt
+      url: /a2oj_uegypt_results
+      output: web
+      type: frontmatter
+
+    
+
+

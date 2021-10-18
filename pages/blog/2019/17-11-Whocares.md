@@ -1,0 +1,15 @@
+---
+title: Who cares
+tags: 
+keywords: blog
+summary: "Keep pretending this matters - 17/11/2019"
+sidebar: mydoc_sidebar
+permalink: 17-11-Whocares.html
+---
+
+## You don't learn
+<div style="text-align: justify">
+
+So I am not sure but I think I am doing the same mistakes when it comes to Farah. I obviously don’t want to stop talking to her hopefully ever but I am not talking to her and not letting myself see if she’s talking to me. I get that this would have been extremely harder if we actually met often but I don’t think I’d have failed either. I already done that with my ex-best-friend despite seeing him almost daily. I don’t know why I do this. She was probably joking about something and started saying mean stuff (probably as part of the joke) she was bored maybe. However, I always fail to understand if this is serious or not also I don’t think this problem is exclusive to her but it’s like this whenever I am having a conversation that lacks facial expression. It becomes hard to understand people. All I do is guess and try to not give it much thought but in most of the cases I do. I also hate that I don’t know if people I love feel the same way about me. I don’t know if it’s me being entitled but I just wish they did. It might not matter but it does. There are some people that I just wish felt the same way I felt about them. Maybe that’s only because I know how I feel about them and wish someone felt the same way about me. Perhaps, anyone? But they happen to be the ones I expect to do? It’s unfair to them I know. It’s just how I feel. I should change that I guess. I don’t know how to tell people this. I try to be completely honest about how I feel about someone. I tell people that I like them or even love them even if it might sound weird I try to really get it through to them. It sometimes seems corny or cringy in some way but I believe it’s better than not telling them at all how much they mean to me.  I wish it would be simpler. I wish I could be who they want me to be. I want to make them as happy as they make me sometimes. But apparently I could never do it to anyone. Maybe one day I will.
+
+<div>

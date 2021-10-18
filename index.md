@@ -1,0 +1,12 @@
+---
+title: My blog - diary?
+keywords: homepage
+tags: 
+sidebar: mydoc_sidebar
+permalink: index.html
+summary: This is a very unimportant page that wasn't meant to be found yet I hoped would be.
+datatable: true
+---
+
+## Disclaimer
+This is for me and only me. I created this to vent, reflect and possibly look back at. If you're someone I know and I mentioned you and you're offended. I am sorry. I truely am. This was never meant to be seen and it's probably not even coherent so whatever I say here doesn't necessarily mean anything.

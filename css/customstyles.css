@@ -1,7 +1,53 @@
-body {
+﻿body {
     font-size:15px;
 }
+/*a {
+    color: #f0e6f1 !important;
+    text-decoration: none;
+}
 
+a:hover 
+{
+     color:#f0e6f1 !important; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+*/
+table a:link, table a:visited, table a:active {
+  color: #f0e6f1 !important;
+  text-decoration: none;
+}
+
+table a:hover {
+  color: #f0e6f1 !important;
+  text-decoration: underline;
+}
+.purple {
+background-color: #a24ca7 !important;;
+color : #f0e6f1 !important;
+}
+.grey {
+background-color: #6e635e !important;
+color : #f0e6f1 !important;
+}
+
+.blue {
+background-color: #347dbe !important;
+color : #f0e6f1 !important;
+}
+.green {
+background-color: #37be34 !important;
+color : #f0e6f1 !important;
+}
+.cyan {
+background-color: #4ca788 !important;
+color : #f0e6f1 !important;
+}
+
+.yellow {
+	background-color: orange !important;
+	color : #f0e6f1 !important;
+}
 .bs-callout {
     padding: 20px;
     margin: 20px 0;
@@ -162,9 +208,7 @@ table > thead:first-child > tr:first-child > td {
     border-top: 0;
 }
 
-table > tbody > tr:nth-of-type(odd) {
-    background-color: #f9f9f9;
-}
+ 
 
 table col[class*="col-"] {
     position: static;
@@ -498,33 +542,28 @@ table.dataTable thead {
 }
 table td {
     hyphens: auto;
+	color: #f0e6f1 !important;
 }
 
 section table tr.success {
-    background-color: #dff0d8 !important;
+    background-color: #000000 !important;
 }
 
 table tr.info {
-    background-color: #d9edf7 !important;
+    background-color: #000000 !important;
 }
 
-section table tr.warning, table tr.testing, table tr.testing > td.sorting_1  {
-    background-color: #fcf8e3 !important;
-}
-section table tr.danger, table tr.preference, table tr.preference > td.sorting_1  {
-    background-color: #f2dede !important;
-}
 
 .orange {
     color: orange;
 }
 
 table.profile thead tr th {
-    background-color: #248ec2;
+    background-color: #000000;
 }
 
 table.request thead tr th {
-    background-color: #ED1951;
+    background-color: #000000;
 }
 
 .audienceLabel {
@@ -942,9 +981,9 @@ span.soft {
 
 /* this part adds an icon after external links, using FontAwesome*/
 a[href^="http://"]:after, a[href^="https://"]:after {
-    content: "\f08e";
-    font-family: FontAwesome;
-    font-weight: normal;
+    content: "\f35d";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
     font-style: normal;
     display: inline-block;
     text-decoration: none;

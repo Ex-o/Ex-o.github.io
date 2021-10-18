@@ -11,7 +11,12 @@
       showSpeed: 'slow' // set to 0 to deactivate effect
     },
     settings = $.extend(defaults, options);
-
+    var links = document.querySelectorAll( '.post-content a' );  
+    for (var i = 0, length = links.length; i < length; i++) {  
+        if (links[i].hostname != window.location.hostname) {
+            links[i].target = '_blank';
+          }
+        }
     var headers = $(settings.headers).filter(function() {
       // get all headers with an ID
       var previousSiblingName = $(this).prev().attr( "name" );
